@@ -21,7 +21,8 @@
         width: 350px; 
         height: 30px; 
         border-radius: 10px; 
-      }
+      } 
+ 
       #button { 
         width: 350px; 
         height: 40px; 
@@ -47,7 +48,7 @@
         text-decoration: underline; 
       } 
     </style> 
-  </head>
+  </head> 
   <body> 
     <center> 
       <div class="form-container"> 
@@ -74,81 +75,47 @@
             required 
           /> 
           <br /><br /> 
-          <input type="tel" 
-          id="tel" 
-          name="tel" 
-          class="field" 
-          placeholder="Phone Number" 
-          pattern="[0-9]{10}" 
-          required 
-        /> 
-        <br /> 
-        <br /> 
-        <input 
-          type="password" 
-          id="password" 
-          name="password" 
-          class="field" 
-          placeholder="Password" 
-          pattern="(?=.[A-Z])(?=.[a-z])(?=.[0-9])(?=.[@#$^])[a-zA-Z0-9_@#$&*]{5,}" 
-          required 
-        /> 
-        <br /> 
-        <br /> 
-        <input 
-          type="password" 
-          id="conf-password" 
-          name="conf-password" 
-          class="field" 
-          placeholder="Confirm Password" 
-          pattern="(?=.[A-Z])(?=.[a-z])(?=.[0-9])(?=.[@#$^])[a-zA-Z0-9_@#$&*]{5,}" 
-          required 
-          oninput="this.setCustomValidity(this.value!==document.getElementById('password').value ? 'Password and Cofirm Password fields must match':'')" 
-        /> 
-        <br /><br /> 
-        <button type="submit" id="button"><b>SignUp</b></button> 
-      </form> 
-      <div class="form-footer"> 
-        <p> 
-          Already have an account! <a href="login.html"><b>Login</b></a> 
-        </p> 
+          <input 
+            type="tel" 
+            id="tel" 
+            name="tel" 
+            class="field" 
+            placeholder="Phone Number" 
+            pattern="[0-9]{10}" 
+            required 
+          /> 
+          <br /> 
+          <br /> 
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            class="field" 
+            placeholder="Password" 
+            pattern="(?=.[A-Z])(?=.[a-z])(?=.[0-9])(?=.[@#$^])[a-zA-Z0-9_@#$&*]{5,}" 
+            required 
+          /> 
+          <br /> 
+          <br /> 
+          <input 
+            type="password" 
+            id="conf-password" 
+            name="conf-password" 
+            class="field" 
+            placeholder="Confirm Password" 
+            pattern="(?=.[A-Z])(?=.[a-z])(?=.[0-9])(?=.[@#$^])[a-zA-Z0-9_@#$&*]{5,}" 
+            required 
+            oninput="this.setCustomValidity(this.value!==document.getElementById('password').value ? 'Password and Cofirm Password fields must match':'')" 
+          /> 
+          <br /><br /> 
+          <button type="submit" id="button"><b>SignUp</b></button> 
+        </form> 
+        <div class="form-footer"> 
+          <p> 
+            Already have an account! <a href="login.html"><b>Login</b></a> 
+          </p> 
+        </div> 
       </div> 
-    </div> 
-  </center> 
-</body> 
+    </center> 
+  </body> 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </form>
